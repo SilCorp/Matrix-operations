@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script defer src="script.js"></script>
+  <style>
+    body {
+      width: 1000px;
+      max-width: calc(100% - 30px);
+      margin: 50px auto;
+    }
+
+
+    label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    label * {
+      width: 100%;
+    }
+
+    button {
+      display: block;
+      width: 100px;
+      height: 40px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<label>
+  Enter initial data here
+  <textarea id="input" rows="10">M=[-9 5 9; -7 8 7; 10 -3 3]
+
+M*M+M-M</textarea>
+</label>
+
+<label>
+  Result
+  <textarea id="result" rows="2"></textarea>
+</label>
+
+<button id="button">
+  Get result
+</button>
+</body>
+</html>
